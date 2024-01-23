@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+.logo{
+    width: 100px;
+}
+nav{
+    padding: 1rem;
+    width: 100%;
+    background-color: rgb(46,73,182),;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    justify-content: space-between;
+}
+.navtexts{
+    display: flex;
+    color: white;
+    gap: 30px;
+    padding-right: 6rem;
+    cursor: pointer;
+}
+.dropdown_div p {
+    cursor: pointer;
+}
+.dropdown{
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    height: 11vh;
+    width: 19vh;
+    position: absolute;
+    top: 70%;
+    margin-left: -3rem;
+    line-height: 30px;
+    display: none;
+
+}
+.dropdown_div:hover .dropdown{
+    display: block;
+
+}
+
+.sect1{
+
+    background-image: linear-gradient(rgb(46,73,182), rgb(73,144,126));
+}
+
+.sect1_content{
+    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  
+}
+.vid{
+    padding-left: 1.5rem;
+}
+.sect1_texts{
+    margin-top: 5.5rem;
+    color: white;
+    width: 57vh;
+    
+}
+.sect1_texts h1{
+    font-size: 100px;
+    line-height: 95px;
+    margin-bottom: 1rem;
+}
+.sect1_texts p{
+    line-height: 25px;
+}
+
+.q3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    margin-top: 5rem;
+    color: white;
+    border-top: 1px solid white;
+}
+.q3 h2{
+    padding-left: 2rem;
+}
+.q3 P{
+    font-weight: 100;
+    font-size: 14px;
+}
+.earnings{
+    display: flex;
+    border-top: 1px solid white;
+    margin-top: 1rem;
+    height: 28vh;
+}
+.row{
+    color: white;
+    height: 100%;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 3rem;
+    border-right: 1px solid white;
+}
+.row h1{
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+.transbtn{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    width: 20vh;
+    height: 5.5vh;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.transbtn:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.7s ease;
+    
+}
+#last_col{
+    border: none;
+}
+
+.sect2{
+    height: 200vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-image: linear-gradient(white, rgb(67,6,246));
+}
+.content1{
+    position: sticky;
+    top: -10%;
+    padding-bottom: 2rem;
+    width: 40vh;
+    padding-left: 3rem;
+}
+.content1 p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.content1 h1{
+    margin-top: 12rem;
+    font-size: 100px;
+}
+.apps{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.apps_img{
+    width: 30px;
+}
+.apps span{
+    font-size: 30px;
+    
+}
+.viewall{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.for p{
+    margin-bottom: 1rem;
+}
+.content2{
+    
+    height: 60vh;
+    padding-right: 3.5rem;
+    width: 110vh;
+    margin-top: 27rem;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.c2_containers{
+    padding: 1rem;
+    height: 54vh;
+    width: 30vh;
+    background-color: white;
+}
+.c2_containers img{
+    width: 30vh;
+    height: 24vh;
+ 
+}
+.c2_containers h5{
+    margin-top: 1rem;
+}
+.c2_containers p{
+
+    width: 30vh;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+#date{
+    margin-top: 6rem;
+    font-weight: 500;
+    font-size: 13px;
+    color: grey;
+}
+.black_btn{
+    background-color: black;
+    color: white;
+    width: 20vh;
+    height: 5.5vh;
+    border: none;
+    border-radius: 3rem;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+
+
+
+.sect3{
+    display: flex;
+    align-items: start;
+    gap: 14vh;
+    height: 200vh;
+    background-image: linear-gradient(white, rgb(79,147,128));
+
+}
+
+
+#s3_content1{
+    top: -5%;
+}
+#s3_viewall{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.s3_container{
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    box-shadow: -0.5rem 0.5rem 2rem -1.3rem;
+}
+.s3_container b{
+    font-size: 18px;
+}
+
+.s3_date{
+    margin-top: 1.5rem;
+    color: gray;
+    font-size: 14px;
+}
+
+.sect4{
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 400vh;
+    gap: 10vh;
+    background-image: linear-gradient(white, rgb(45,70,185));
+}
+
+#s4_content2{
+    margin-top: 16rem;
+}
+.s4_texts{
+    margin-left: 25rem;
+}
+.s4_texts p{
+   margin-top: 1rem;
+   margin-bottom: 2.5rem;
+    line-height: 28px;
+    font-size: 17px;
+    width: 64vh;
+}
+.s4_texts h1{
+    margin-top: 12rem;
+    font-size: 44px;
+}
+.s4_row{
+    margin-left: 4.5rem;
+    display: flex;
+    gap: 3vh;
+}
+.s4_containers{
+    width: 34vh;
+    height: 37vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.cont_content{
+    width: 30vh;
+}
+.cont_content img{
+    width: 30vh;
+    height: 22vh;
+}
+.cont_content p{
+    color: blue;
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#two{
+    width: 100%;
+    margin-left: 23.5rem;
+}
+
+.sect5{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 60vh;
+    background-color: rgb(45,70,185);
+   
+}
+.sect5 button{
+    width: 21vh;
+    height: 5.5vh;
+    color: blue;
+    background-color: white;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+.container1{
+    height: 50vh;
+    width: 50%;
+    border: 1px solid white;
+    border-bottom: none;
+}
+.container1_content{
+    color: white;
+    padding: 5rem;
+}
+
+.email{
+    width: 70vh;
+    height: 6vh;
+    color: white;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background: none;
+    border: 1px solid white;
+}
+
+.checkboxes label{
+    margin-right: 5rem;
+    font-weight: 100;
+    font-size: 14px;
+ 
+
+}
+
+.container2{
+    width: 43%;
+    height: 40vh;
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+}
+.container2_content{
+    width: 45vh;
+    color: white;
+    padding: 6rem;
+}
+.container2_content p{
+    font-size: 14px;
+    margin-top: 1rem;
+    line-height: 22px;
+}
+
+
+
+
+.footer{
+    background-color: black;
+    height: 60vh;
+    padding-bottom: 1rem;
+
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    gap: 30vh;
+    padding: 5rem;
+
+   
+
+}
+.logo2{
+    width: 250px;
+    filter: invert(1);
+    margin-top: 1.5rem;
+}
+.links_texts{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    gap: 80px;
+    color: gray;
+    margin-left: -8rem;
+}
+.links_texts p{
+    color: white;
+    font-size: 16px;
+    
+   
+}
+  
+.text_column{
+    line-height: 50px;
+}
+.text_column p:hover{
+    color: rgb(14, 186, 14);
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+
+
+}
+.icon2{
+    background: none;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.icon2 img{
+    width: 24px;
+}
+.footer_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get_spotify{
+    background-color: rgb(32,215,96);
+    width: 20vh;
+    height: 5vh;
+    border: none;
+    border-radius: 2rem;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+.get_spotify:hover{
+    background-color: white;
+    cursor: pointer;
+}
+hr{
+    width: 125vh;
+    margin: auto;
+    opacity: 0.1;
+   
+}
+#end_text{
+    color: gray;
+    font-size: 14px;
+    margin-left: 2.7rem;
+
+}
+
+.links2{
+    display: flex;
+
+   
+  
+    color: gray;
+    font-size: 13px;
+    margin-top: -2rem;
+    margin-left: 4rem;
+}
+.other_links{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 110vh;
+}
+.other_links p{
+    line-height: 2px;
+    font-size: 12px;
+}
+.other_links p:hover{
+    color: rgb(14, 186, 14);
+}
+
+
+.Nigeria{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.Nigeria span{
+    font-size: 16px;
+}
+.Nigeria p:hover{
+    color: rgb(14, 186, 14);
+    cursor: pointer;
+}

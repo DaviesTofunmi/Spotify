@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgb(18,18,18);
+    color: white;
+    font-family: sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+.logo{
+    width: 140px;
+}
+.nav_right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.nav_right p{
+    font-weight: 600;
+}
+.nav_right p:hover{
+    color: rgb(14, 186, 14);
+    cursor: pointer;
+}
+#line{
+    font-size: 20px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile:hover{
+    color: rgb(14, 186, 14);
+    cursor: pointer;
+}
+.profilepic{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+
+.nav_right2{
+    display: none;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.7rem;
+}
+.nav_right2 span{
+    font-size: 35px;
+}
+.menu_btn{
+    background: none;
+    border: none;
+    color: white;
+}
+.menu_dropdown{
+    background-color: black;
+    height: 93vh;
+    width: 50vh;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    display: none;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+}
+.menu_div:focus-within .menu_dropdown{
+    display: flex;
+
+}
+.menu_dropdown p:hover{
+    color: rgb(71, 227, 71);
+}
+.account_logout{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(204, 202, 202);
+}
+.menu_logo{
+    width: 90px;
+    margin-top: 17rem;
+}
+
+
+
+section{
+    height: 198vh;
+    width: 96vh;
+    margin: auto;
+}
+
+.container1{
+    display: flex;
+    gap: 7px;
+    height: 32vh;
+}
+
+.c1_left{
+    background-color: rgb(35,35,35);
+    width: 68%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.c1_left:hover{
+    background-color: rgb(25, 25, 25);
+}
+.c1_left_content{
+    width: 97%;
+    
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.c1_left_texts{
+    color: rgb(168, 167, 167);
+    line-height: 35px;
+    
+}
+
+h1{
+    font-size: 30px;
+    margin-top: -0.7rem;
+    color: rgb(255,210,215);
+}
+h6{
+    color: white;
+}
+
+.left_logo{
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    width: 30px;
+    height: 30px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+.c1_right{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+   
+}
+.c1_right_containers{
+    background-color:rgb(35,35,35);
+    height: 16vh;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(168, 167, 167);
+    cursor: pointer;
+}
+.c1_right_containers:hover{
+    background-color: rgb(25, 25, 25);
+}
+.c1_right_containers p{
+    font-size: 13px;
+
+}
+.c1_right_containers span{
+    font-size: 30px;
+}
+
+
+
+.containers{
+   
+    background-color: rgb(35,35,35);
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.container_content{
+    
+ 
+    padding-top: 0.8rem;
+  
+}
+h3{
+    margin-left: 0.5rem;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.5rem;
+    border-radius: 0.2rem;
+    height: 7vh;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.items_left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.items span{
+    font-size: 20px;
+    color: rgb(168, 167, 167);
+}
+.items:hover{
+    background-color: rgb(25, 25, 25);
+
+}
+.icon{
+    background-color: rgb(51,51,51);
+    height: 33px;
+    width: 33px;
+    border-radius: 0.2rem;
+    margin-left: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(168, 167, 167);
+}
+.icon span{
+    font-size: 22px;
+}
+.spotify_icon{
+    width: 20px;
+}
+
+
+
+.footer{
+    background-color: black;
+    height: 67vh;
+    padding-bottom: 1rem;
+
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+
+   
+
+}
+.logo2{
+    width: 140px;
+    margin-top: -4.5rem;
+}
+.links_texts{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    gap: 80px;
+    color: gray;
+    margin-left: -8rem;
+}
+.links_texts p{
+    color: white;
+    font-size: 16px;
+    
+   
+}
+  
+.text_column{
+    line-height: 50px;
+}
+.text_column p:hover{
+    color: rgb(14, 186, 14);
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+
+
+}
+.icon2{
+    background-color: rgb(42, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+}
+.icon2 img{
+    width: 28px;
+}
+hr{
+    width: 125vh;
+    margin: auto;
+    opacity: 0.1;
+   
+}
+#end_text{
+    color: gray;
+    font-size: 14px;
+    margin-left: 2.7rem;
+
+}
+
+.links2{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    gap: 190px;
+    color: gray;
+    font-size: 13px;
+}
+.other_links{
+    display: flex;
+    gap: 10px;
+}
+.other_links p:hover{
+    color: rgb(14, 186, 14);
+}
+
+.links2_right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Nigeria{
+    margin-top: -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.Nigeria span{
+    font-size: 16px;
+}
+.Nigeria p:hover{
+    color: rgb(14, 186, 14);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 990px) {
+
+  }
+
+
+
+@media only screen and (max-width: 800px) {
+    section{
+        width: 70vh;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .links_texts{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-left: 1rem;
+    }
+    .footer{
+        height: 155vh;
+    }
+    .icons{
+        justify-content: start;
+        
+    }
+    .other_links{
+        display: flex;
+        width: 180px;
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+    .nav_right{
+        display: none;
+    }
+    .nav_right2{
+        display: flex;
+        margin-right: -2rem;
+    }
+  }
+
+  @media only screen and (max-width: 584px) {
+    section{
+        width: 50vh;
+    }
+    .footer{
+        height: 160vh;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    section{
+        width: 40vh;
+    }
+    .footer{
+        height: 170vh;
+    }
+  }

@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+   
+    
+}
+
+.main{
+    display: flex;
+    background-color: black;
+    width: 100%;
+
+}
+.left{
+     width:23%;
+     height: 89vh;
+     background-color: black;
+     padding: 0.5rem;
+}
+.right{
+ 
+    background-color: rgb(18,18,18);
+    width: 77%;
+    height: 90vh;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding-right: 1rem;
+    overflow-y: scroll;
+
+
+}
+.left_container1{
+    background-color: rgb(18,18,18);
+    height: 15.5%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+
+}
+.logo{
+    width: 80px;
+    margin-top: -2rem;
+    margin-bottom: -1.5rem;
+   
+
+}
+.container_navs{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    color: white;
+}
+.container_navs span{
+    font-size: 30px;
+}
+.container_navs:hover{
+    color: white;
+}
+#search{
+    color: gray;
+}
+#search:hover{
+    color: white;
+}
+
+.left_container2{
+    margin-top: 0.5rem;
+    background-color: rgb(18,18,18);
+    height: 80%;
+    border-radius: 0.5rem;
+    color: white;
+}
+.your_library{
+    padding: 0rem 1rem 0rem 1rem;
+  height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#your_library{
+    color: gray;
+}
+#your_library:hover{
+    color: white;
+}
+.plus{
+    font-size: 40px;
+    font-weight: lighter;
+    color: gray;
+}
+.plus:hover{
+    color: white;
+}
+.sub_container{
+    margin: auto;
+    background-color:rgb(36,36,36);
+    height: 16vh;
+    width: 90%;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0rem 0rem 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.sub_container h4{
+    font-weight: 400;
+    line-height: 0px;
+    margin-bottom: 1rem;
+}
+.sub_container p{
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+
+}
+.sub_container button{
+    border: none;
+    height: 30px;
+    width: 130px;
+    border-radius: 1rem;
+    
+}
+#Browse_podcasts{
+    border: none;
+    height: 30px;
+    width: 150px;
+    border-radius: 1rem;
+    
+}
+.sub_container button:hover{
+   transform: scale(1.1);
+    
+}
+
+.left_container2_footer{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    justify-content: left;
+  
+  
+}
+.left_container2_footer p{
+    font-size: 10px;
+    font-weight: 100;
+    color: gray;
+    margin-bottom: -1rem;
+ 
+ 
+}
+#cookies{
+    font-size: 10px;
+    font-weight: 100;
+    color: gray;
+    margin-top: 2.3rem;
+    margin-left: 1rem;
+
+}
+#cookies:hover{
+    border-bottom: 1px solid;
+    width: 10%;
+    cursor: pointer;
+}
+.language_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 1.3rem;
+    width: 100px;
+    height: 35px;
+    margin-left: 1rem;
+}
+.language_btn:hover{
+    border-color: white;
+   transform: scale(1.1);
+}
+
+.right_nav{
+    position: fixed;
+    height: 9vh;
+    width: 76%;
+    background-color: rgba(80, 78, 78, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+.right_nav_rightcontent{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 1rem;
+}
+.ios_arrows{
+    display: flex;
+}
+.arrows{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.348);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+#arrow_left{
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.right_navtexts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+}
+.SignUp_link{
+    text-decoration: none;
+}
+#sign_up{
+    color: gray;
+}
+
+#line{
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+.login_btn{
+    color: black;
+    border: none;
+    border-radius: 2rem;
+    width: 100px;
+    height: 50px;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    
+}
+.right_headcontent{
+    padding-left: 1.5rem;
+    padding-top: 5rem;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-top: 1rem;
+   padding-right: 1rem;
+  
+}
+#spotify_playlists{
+    font-size: 22px;
+}
+#show_all{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(159, 156, 156);
+}
+.playlists{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 2rem;
+  
+    
+}
+
+.playlist_cards{
+    background-color: rgb(23,23,23);
+    height: 30vh;
+    width: 21vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    text-align:left;
+
+    gap: 10px;
+    border-radius: 0.4rem;
+    color: white;
+}
+.playlist_cards:hover{
+    background-color: rgba(88, 88, 88, 0.405);
+}
+#label{
+    font-size: 13px;
+    color: gray;
+}
+.playlist_img{
+    width: 155px;
+    border-radius: 0.4rem;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+   
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+   
+
+}
+.links_texts{
+    display: flex;
+    justify-content: space-between;
+  
+    width: 50%;
+    color: white;
+}
+.links_texts p{
+    color: gray;
+   
+}
+  
+.text_column{
+    line-height: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: end;
+    gap: 18px;
+
+    width: 50%;
+}
+.icon{
+    background-color: rgb(42, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+hr{
+    width: 125vh;
+    margin: auto;
+    opacity: 0.1;
+   
+}
+#end_text{
+    color: gray;
+    font-size: 14px;
+    margin-left: 2.7rem;
+
+}
+
+
+.footer{
+    background-color: rgb(71, 12, 12);
+    height: 8vh;
+    margin-top: 0.5rem;
+    background-image: linear-gradient(to right, rgb(174,41,150) , rgb(80,154,244));
+    margin: 0.5rem 0.1rem 0 0.5rem;
+    
+    
+
+}
+.footer_content{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.footer_content p{
+    color: white;
+    font-size: 12px;
+}
+.signup_btn{
+    color: black;
+    border: none;
+    border-radius: 2rem;
+    width: 140px;
+    height: 50px;
+  
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1055px) {
+    #ChillHit{
+        display: none;
+    }
+    #RockClassics{
+        display: none;
+    }
+   
+    .icons{
+        display: none;
+    }
+    .left{
+        width: 40vh;
+    }
+    .left p, .left h4{
+        font-size: 12px;
+    }
+
+    .right{
+        overflow-x: hidden;
+    }
+ 
+  }
+
+@media only screen and (max-width: 755px) {
+    .right{
+        margin-right: 0.5rem;
+    }
+  
+    #AllOut{
+        display: none;
+    }
+    .right_nav{
+        justify-content: flex-start;
+        padding-left: 5rem;
+       gap: 30px;
+       
+    }
+    .right_navtexts, #line{
+        display: none;
+        
+    }
+    .links_texts{
+        display: block;
+    }
+  }
+
+  @media only screen and (max-width: 1189px) {
+    .right{
+        width: 75%;
+        padding-right: 5rem;
+        overflow: hidden;
+    }
+  }

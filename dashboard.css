@@ -1,0 +1,589 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+}
+.right{
+    border-radius: 0.5rem;
+    background-color: rgb(18,18,18);
+    width: 70%;
+    height: 89vh;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+.right_nav{
+    position: fixed;
+    height: 9vh;
+    width:68%;
+    background-color: rgba(80, 78, 78, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    
+}
+.right_nav_rightcontent{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 1rem;
+    color: white;
+}
+.install{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.522);
+    width: 110px;
+    height: 30px;
+    border-radius: 1rem;
+    font-size: 14px;
+}
+.circles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.522);
+}
+.circles img{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.profile_btn{
+    background: none;
+    border: none;
+}
+.profile_dropdown{
+    height: 20vh;
+    width: 23vh;
+    background-color: rgb(42, 41, 41);
+    position: absolute;
+    right: 1.5%;
+    top: 85%;
+    padding: 0.2rem;
+    display: none;
+    flex-direction: column;
+    border-radius: 0.3rem;
+
+}
+.right_nav_rightcontent:focus-within .profile_dropdown{
+    display: flex;
+}
+.dropdownitems{
+    padding-left: 0.5rem;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 100;
+   
+}
+.dropdownitems:hover{
+    background-color: rgb(61, 61, 62);
+
+}
+.account{
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    height: 5vh;
+    padding-left: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.account_link{
+    text-decoration: none;
+    color: white;
+}
+.account:hover{
+    background-color: rgb(61, 61, 62);
+}
+.dropdown_hr{
+    width: 100%;
+   margin-top: -0.1rem;
+   margin-bottom: -0.1rem;
+    
+}
+h1{
+    color: white;
+    margin-top: 5rem;
+}
+.content_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content_header p{
+    color: gray;
+    font-size: 13px;
+}
+.ios_arrows{
+    display: flex;
+}
+.arrows{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.348);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+#arrow_left{
+    font-size: 20px;
+    margin-left: 8px;
+}
+.right_content{
+    padding: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 95%;
+    
+}
+.recent_music{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 7px;
+}
+.play_circle2{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(82, 211, 82);
+    margin-right: 0.5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#playIcon2{
+    width: 16px;
+    filter: invert(1);
+}
+
+.music_rect{
+    background-color: rgba(78, 78, 78, 0.526);
+    display: flex;
+    justify-content: space-between;
+    width: 38.7vh;
+    color: white;
+    align-items: center;
+    border-radius: 0.2rem ;
+    font-size: 13px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.music_rect_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.music_rect:hover {
+    background-color: rgb(67, 65, 65);
+}
+.music_rect:hover .play_circle2{
+    display: flex;
+}
+
+.music_rect img{
+    width: 50px;
+    border-radius: 0.2rem 0rem 0rem 0.2rem;
+}
+h2{
+    color: white;
+}
+.rows{
+    margin-top: 2rem;
+}
+.play_btn{
+    position: relative;
+    background-color: rgb(82, 211, 82);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: -4rem;
+    margin-left: 5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+#playIcon{
+    position: relative;
+    width: 22px;
+    filter: invert(1);
+
+
+}
+.playlists{
+    margin-top: 1rem;
+    display: flex;
+    gap: 30px;
+}
+.playlist_cards{
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(23, 23, 23);
+    padding: 1rem;
+    width: 16.5vh;
+    line-height: 28px;
+    cursor: pointer;
+
+}
+.playlist_cards:hover{
+    background-color: rgb(45, 43, 43);
+    .play_btn{
+        display: flex;
+       margin-bottom: 1.9rem;
+    }
+}
+.playlist_cards p{
+  margin-top: 1rem;
+
+}
+
+.playlist_cards span{
+    color: gray;
+    display: flex;
+    text-wrap: wrap ;
+    width: 138px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.playlist_cards img{
+    width: 135px;
+    border-radius: 0.2rem;
+}
+
+.left{
+
+    width: 30%;
+    height: 98vh;
+    padding: 0.5rem;
+}
+
+.left_container1{
+    background-color: rgb(18,18,18);
+    height: 10vh;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+  
+}
+.container_navs{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+   
+}
+.left_container2{
+    background-color: rgb(18,18,18);
+    height: 70.1vh;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.your_library{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(179, 177, 177);
+}
+.container2_navs{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    color: rgb(190, 189, 189);
+    line-height: 40px;
+
+}
+.category{
+    background-color: rgba(71, 71, 71, 0.377);
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+   
+}
+.category_navs{
+    display: flex;
+    gap: 10px;
+}
+.search_recents{
+    display: flex;
+    justify-content: space-between;
+}
+.search_div{
+    margin-top: 0.8rem;
+    margin-left: 0.3rem;
+}
+.searchbar{
+    margin-top: 0.5rem;
+    color: rgb(227, 223, 223);
+    display: none;
+    position: absolute;
+    top: 26.6%;
+    left: 1.5%;
+    align-items: center;
+    background-color: rgba(110, 110, 110, 0.341);
+    width: 190px;
+    height: 30px;
+    padding-left: 0.5rem;
+    border-radius: 0.2rem;
+    z-index: 1;
+    transition: all 2s linear;
+}
+.search_input{
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(161, 161, 161);
+}
+.search_btn{
+    background: none;
+    border: none;
+    color: white;
+}
+.search_div:focus-within .searchbar{
+    display: flex;
+    transition: all 2s linear;
+
+}
+.slider{
+    margin-top: 1rem;
+    width: 49vh;
+    height: 55vh;
+    overflow: scroll;
+  
+    
+
+}
+
+.slider_items{
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    line-height: 10px;
+    margin-top: 0.1rem;
+    margin-left: -0.5rem;
+    padding: 0.5rem;
+
+    
+}
+.slider_items:hover{
+    background-color: rgba(72, 72, 72, 0.26);
+}
+.slider_items img{
+    width: 55px;
+}
+.slider_items span{
+    color: gray;
+    font-size: 12px;
+}
+
+#dot{
+    font-size: 50px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+   
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+   
+
+}
+.links_texts{
+    display: flex;
+    justify-content: space-between;
+  
+    width: 50%;
+    color: white;
+}
+.links_texts p{
+    color: gray;
+   
+}
+  
+.text_column{
+    line-height: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: end;
+    gap: 18px;
+
+    width: 50%;
+}
+.icon{
+    background-color: rgb(42, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+hr{
+    width: 125vh;
+    margin: auto;
+    opacity: 0.1;
+   
+}
+#end_text{
+    color: gray;
+    font-size: 14px;
+    margin-left: 2.7rem;
+
+}
+
+.links2{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+.other_links{
+    display: flex;
+  
+    gap: 10px;
+}
+
+
+
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 10vh;
+}
+.footer p{
+    color: white;
+    font-size: 14px;
+}
+#artist{
+    font-size: 11px;
+}
+.footer span{
+    color: rgb(182, 182, 182);
+}
+.footer img{
+    width: 60px;
+}
+.footer_left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 0.5rem;
+}
+.footer_mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.play_circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -0.2rem;
+}
+.play_circle img{
+    width: 20px;
+    filter: invert(1);
+}
+.controls{
+    display: flex;
+    gap: 20px;
+  
+
+}
+.controls span{
+    font-size: 30px;
+}
+
+.footer_right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer_right span{
+    font-size: 20px;
+}
+.slider2 {
+    width: 90px;
+    height: 5px;
+  }
+
+  #myProgress {
+    
+    width: 60vh;
+    border-radius: 2rem;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 50%;
+    height: 5px;
+    border-radius: 2rem;
+    background-color: white;
+  }
+  .music_progress{
+    display: flex;
+
+    gap: 10px;
+  }
+  .music_progress p{
+    font-size: 11.5px;
+    color: gray;
+  }
+  .slidecontainer3{
+    margin-top: -0.4rem;
+   
+  }
+  .slider3{
+    background-color: green;
+   
+    width: 60vh;
+    height: 5px;
+  }
+

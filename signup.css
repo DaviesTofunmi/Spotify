@@ -1,0 +1,64 @@
+
+
+.logo{
+    width: 90px;
+}
+.Next_btn{
+    height: 6.5vh;
+    border-radius: 2rem;
+    background-color: rgb(32,215,96);
+}
+
+.google_logo{
+    width: 35px;
+}
+
+.Google_btn{
+    height: 6.5vh;
+    border-radius: 2rem;
+
+}
+.footer{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1130px) {
+    .Google_btn_div span{
+        font-size: 12px;
+
+    }
+  
+
+}
+@media only screen and (max-width: 938px) {
+    .Google_btn_div span {
+        font-size: 10px;
+
+    }
+
+}

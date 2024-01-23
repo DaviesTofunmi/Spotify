@@ -1,0 +1,824 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.logo{
+    width: 240px;
+}
+nav{
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    justify-content: space-around;
+    gap: 160px;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+.nav_right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav_content{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav_btn{
+    background: none;
+    border: none;
+    
+}
+.dropdown{
+ display: none;
+    width: 22vh;
+    background-color: white;
+    border: 1px solid rgb(201, 201, 201);
+    position: absolute;
+   margin-left: -4rem;
+   margin-top: 0.2rem;
+    padding: 1rem 0rem 1rem 2rem;
+    line-height: 30px;
+    transition: all 2s linear;
+}
+
+.dropdown_div:focus-within .dropdown{
+    display: block;
+}
+.start_btn{
+    width: 17vh;
+    height: 5vh;
+    border-radius: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+
+.sect1{
+   display: flex;
+   align-items: center;
+    height: 100vh;
+
+}
+
+.sect1 img{
+    width: 700px;
+    height: 500px;
+}
+.sect1_content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.sect1 h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.sect1 p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.sect1_btns{
+    display: flex;
+    gap: 18px;
+}
+
+.sect2{
+    background-color: black;
+    height: 76vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.sect2_content{
+    margin: auto;
+}
+.sect2 h3{
+    font-size: 25px;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.col1 h1{
+    font-size: 100px;
+}
+
+.columns{
+    display: flex;
+    gap: 60px;
+}
+
+
+
+
+
+
+
+
+.sect3{
+    display: flex;
+    align-items: center;
+     height: 75vh;
+ 
+ }
+ 
+ .sect3 img{
+     width: 700px;
+     height: 500px;
+ }
+ .sect3_content{
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+    
+ }
+ .sect3 h1{
+     font-size: 50px;
+     font-weight: 900;
+ }
+ .sect3 p{
+     font-size: 18px;
+     line-height: 30px;
+ }
+ .sect3_btns{
+     display: flex;
+     gap: 18px;
+ }
+ .sect3 button{
+    background: none;
+    color: black;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+ }
+ .sect3 button:hover{
+    color: gray;
+ }
+
+
+
+
+
+ .sect4{
+    background-color: rgb(249,249,249);
+    height: 100vh;
+    
+  
+ }
+ .sect4_content{
+    padding: 4rem 4rem 0rem 4rem;
+ }
+ .sect4 .columns{
+    gap: 38px;
+ }
+ .col2{
+    margin-top: 3rem;
+    background-color: rgb(76,145,126);
+    height: 35vh;
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+ }
+ .phones{
+    width: 120px;
+    transition: all 0.5s ease;
+ }
+ .each_column:hover .phones{
+    scale: 1.1;
+ }
+
+ .each_column{
+    line-height: 45px;
+ }
+ .p1{
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 0.7rem;
+ }
+ .p2{
+    font-size: 19px;
+    color: black;
+    transition: all 0.2s linear;
+ }
+ .p2:hover{
+    text-decoration: none;
+    color: gray;
+}
+.sect4 h2{
+    width: 418px;
+    line-height: 35px;
+}
+
+
+
+
+
+
+.sect5{
+    background-color: black;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    color: white;
+
+}
+.sect5 img{
+    width: 500px;
+}
+.sect5_content{
+    margin-right: 8rem;
+    line-height: 35px;
+    font-size: 18px;
+}
+.sect5 h1{
+    font-size: 45px;
+    line-height: 80px;
+}
+
+
+.sect6{
+    color: white;
+    background-color: rgb(76,145,125);
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    gap: 25vh;
+    padding-left: 3rem;
+  
+}
+.sect6 h1{
+    font-size: 45px;
+}
+.sect6 p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.sect6_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    gap: 50px;
+    line-height: 30px;
+}
+.sect6 button{
+    background: none;
+    color: black;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    font-weight: 100;
+ }
+ #start_btn_white{
+    color: white;
+ }
+ #start_btn_white:hover{
+    color: rgb(81, 80, 80);
+ }
+
+
+
+ .sect7{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    padding-top: 7rem;
+    justify-content: space-around;
+ }
+ .sect7 h1{
+    font-size: 45px;
+ }
+ .sect7_content{
+    font-size: 38px;
+    font-weight: 600;
+    text-align: left;
+ }
+ select{
+    background: none;
+    color: rgb(32,215,96);
+    height: 5vh;
+    width: 60vh;
+    font-size: 38px;
+    font-weight: 600;
+    border: none;
+    margin-left: -0.2rem;
+ }
+
+ form{
+    display: flex;
+    flex-direction: column;
+ }
+ input{
+    color: white;
+    font-size: 17px;
+    width: 60vh;
+    height: 7vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(130, 127, 127);
+ }
+ form:focus-within #first{
+    color: white;
+    border-bottom: 1px solid rgb(32,215,96);
+ }
+
+.location{
+    display: flex;
+    gap: 30px;
+    margin-top: 1rem;
+}
+ .select2{
+    width: 48vh;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid rgb(130, 127, 127);
+ }
+ .select3{
+    width: 9vh;
+    font-size: 16px;
+    font-weight: 200;
+    color: gray;
+    outline: none;
+    border-bottom: 1px solid rgb(130, 127, 127);
+ }
+
+ .signup_check{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 1.8rem;
+ }
+ .check{
+    width: 20px;
+ }
+ .protect{
+    color: gray;
+    font-size: 14px;
+    font-weight: 200;
+ }
+ .protect a{
+    color: rgb(80,155,245);
+    text-decoration: none;
+ }
+ .protect a:hover{
+    border-bottom: 1px solid;
+
+ }
+ .letsgo{
+    margin-top: 3rem;
+    border-radius: 2rem;
+    border: none;
+    width: 14vh;
+    height: 4.5vh;
+    background-color: rgb(58, 57, 57);
+    color: rgb(160, 158, 158);
+    cursor: pointer;
+ }
+
+ .sect8{
+    background-color: rgb(35,35,35);
+    height: 100vh;
+ }
+
+
+
+
+.footer{
+    background-color: rgb(35,35,35);
+    height: 85vh;
+    padding-bottom: 1rem;
+
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    gap: 30vh;
+    padding: 5rem;
+
+   
+
+}
+.logo2{
+    width: 250px;
+    filter: invert(1);
+    margin-top: 1.5rem;
+}
+.links_texts{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    gap: 80px;
+    color: gray;
+    margin-left: -8rem;
+}
+.links_texts p{
+    color: white;
+    font-size: 16px;
+    
+   
+}
+  
+.text_column{
+    line-height: 50px;
+}
+.text_column p:hover{
+    color: rgb(14, 186, 14);
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+
+
+}
+.icon2{
+    background: none;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.icon2 img{
+    width: 24px;
+}
+hr{
+    width: 125vh;
+    margin: auto;
+    opacity: 0.1;
+   
+}
+#end_text{
+    color: gray;
+    font-size: 14px;
+    margin-left: 2.7rem;
+
+}
+
+.links2{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    gap: 190px;
+    color: gray;
+    font-size: 13px;
+    margin-top: 8rem;
+}
+.other_links{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 110vh;
+}
+.other_links p{
+    line-height: 2px;
+    font-size: 15px;
+}
+.other_links p:hover{
+    color: rgb(14, 186, 14);
+}
+
+.links2_right{
+    display: flex;
+    gap: 20px;
+}
+.Nigeria{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.Nigeria span{
+    font-size: 16px;
+}
+.Nigeria p:hover{
+    color: rgb(14, 186, 14);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+    body{
+        overflow-x: hidden;
+   
+    }
+    .sect1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-left: 4rem;
+        margin-bottom: 2rem;
+      
+    }
+    .sect2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        
+    }
+    .sect3{
+        display: block;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        margin-bottom: 15rem;
+    }
+    .sect4{
+        display: block;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 0rem;
+        height: 350vh;
+    }
+    .sect4 .columns{
+        display: block;
+    }
+    .col2{
+        width: 100%;
+        height: 85vh;
+    }
+    .phones{
+        width: 35vh;
+    }
+
+    .sect5{
+        display: flex;
+        flex-direction: column;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+        height: 110vh;
+    }
+    .sect5 img{
+        width: 89vh;
+    }
+
+    .sect5_content{
+        margin-left: -13rem;
+    }
+    .sect6{
+        padding-top: 2rem;
+        display: block;
+        height: 28vh;
+    }
+    .sect6_content{
+        margin-top: 1rem;
+    }
+    .sect6 h1{
+        font-size: 30px;
+    }
+
+
+    .sect7{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+       
+        height: 180vh;
+        
+    }
+    .links{
+        display: block;
+        margin-left: 10rem;
+    }
+    .links_texts{
+        display: block;
+    }
+    .icons{
+        display: flex;
+        margin-top: 1rem;
+        width: 20vh;
+        margin-left: -9rem;
+     
+    }
+    .links2{
+        display: block;
+    }
+    .other_links{
+        width: 20vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 7rem;
+        margin-top: -11rem;
+    }
+    .links2_right{
+        display: block;
+        margin-left: 7rem;
+        margin-top: 3rem;
+
+
+        
+    }
+    .Nigeria{
+        display: block;
+        margin-left: 0rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 481px) {
+    body{
+        overflow-x: hidden;
+   
+    }
+    .sect1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-left: 4rem;
+        margin-bottom: 2rem;
+        height: 135vh;
+      
+    }
+    .sect1_btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .sect1 button{
+        width: 90%;
+    }
+    .sect2{
+        height: 100vh;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .sect2 .columns{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        
+        
+    }
+    .sect3{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        padding-top: 2rem;
+    }
+    .sect3 img{
+        width: 450px;
+        height: 350px;
+    }
+    .sect4{
+        display: block;
+        padding-left: 1rem;
+        height: 225vh;
+    }
+    .sect4 p{
+        padding-right: 6rem;
+    }
+    .sect4 .columns{
+        display: block;
+    }
+    .col2{
+        width: 100%;
+        height: 40vh;
+    }
+    .phones{
+        width: 15vh;
+    }
+
+    .sect5{
+        display: flex;
+        flex-direction: column;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+        height: 110vh;
+    }
+    .sect5 img{
+        width: 89vh;
+    }
+
+    .sect5_content{
+        margin-left: -13rem;
+    }
+    .sect6{
+        padding-top: 2rem;
+        display: block;
+        height: 28vh;
+    }
+    .sect6_content{
+        margin-top: 1rem;
+    }
+    .sect6 h1{
+        font-size: 30px;
+    }
+
+
+    .sect7{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+       
+        height: 180vh;
+        
+    }
+    .links{
+        display: block;
+        margin-left: 10rem;
+    }
+    .links_texts{
+        display: block;
+    }
+    .icons{
+        display: flex;
+        margin-top: 1rem;
+        width: 20vh;
+        margin-left: -9rem;
+     
+    }
+    .links2{
+        display: block;
+    }
+    .other_links{
+        width: 20vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 7rem;
+        margin-top: -11rem;
+    }
+    .links2_right{
+        display: block;
+        margin-left: 7rem;
+        margin-top: 3rem;
+
+
+        
+    }
+    .Nigeria{
+        display: block;
+        margin-left: 0rem;
+    }
+}
